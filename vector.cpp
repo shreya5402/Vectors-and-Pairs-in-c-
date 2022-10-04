@@ -10,6 +10,10 @@ int main(){
     //initialising the vector
 
     vector<int> v;
+    
+    //initialising an array of size n using vector 
+    
+    vector<int> arr(n);
 
     // adding elements to the vector
 
