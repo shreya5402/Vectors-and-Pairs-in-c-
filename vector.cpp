@@ -33,11 +33,12 @@ int main(){
 
     vector<int>::iterator it;
     for(it= v.begin(); it!=v.end(); it++){
-        cout<<*it<<endl;
+        cout<<*it<<endl; // iterator is a pointer therefore *
     }
 
     //Way 3:-
-    //Using the keyword auto
+    //Using the keyword auto //for traversing 
+    //auto tells the compiler to auto decide the data type.
 
     for(auto element:v){ //here element is not an iterator but it signies the values in the vector.
         cout<<element<<endl; 
@@ -52,7 +53,7 @@ int main(){
     //Swap Function
     //Making another vector
 
-    vector<int> v2 (4,10); // here 4 denotes the size and 10 denotes the element or the value stored in each of them.
+    vector<int> v2 (4,10); // here 4 denotes the size and 10 denotes the element or the value stored in each of the 4 size elements.
     //swapping v and v2
     swap(v,v2);
     for(auto element:v){ //here element is not an iterator but it signies the values in the vector.
@@ -61,5 +62,13 @@ int main(){
     for( auto element:v2){
         cout<<element<<endl;
     }
+    
+    ///////////////////////////////////////////
+    //Pair is an stl container that allows us to store a pair of values that can be of any type.
+    
+    //implementing a pair:-
+    pair<int,char> p; //here we specify the data types of both the values in the pair
+    p.first = 3;
+    p.second = 'f';
 
 }
